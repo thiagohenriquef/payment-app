@@ -8,7 +8,7 @@ import {
 } from '../../common/tab/tabActions'
 
 const BASE_URL = 'http://localhost:3000/api'
-const INITIAL_VALUES = {}
+const INITIAL_VALUES = {credits: [{}], debits: [{}]}
 
 export function getList() {
   const request = axios.get(`${BASE_URL}/billingCycle`)
@@ -24,6 +24,10 @@ export function update(values) {
 
 export function create(values) {
   return submit(values, 'post')
+}
+
+export function remove(values) {
+  return submit(values, 'delete')
 }
 
 function submit(values, method) {
@@ -42,7 +46,14 @@ export function showUpdate (billingCycle) {
   return [
     showTabs('tabUpdate'),
     selectTab('tabUpdate'),
-    getList(),
+    initialize('billingCycleForm', billingCycle)
+  ]
+}
+
+export function showDelete (billingCycle) {
+  return [
+    showTabs('tabDelete'),
+    selectTab('tabDelete'),
     initialize('billingCycleForm', billingCycle)
   ]
 }
