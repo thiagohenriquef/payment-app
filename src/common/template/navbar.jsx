@@ -28,7 +28,7 @@ class Navbar extends Component {
               data-toggle="dropdown">
               <img
                 src="http://lorempixel.com/160/160/abstract"
-                className="user-image" alt="User Image" />
+                className="user-image"  alt="User Image" />
               <span
                 className="hidden-xs">{name}</span>
             </a>
@@ -37,7 +37,7 @@ class Navbar extends Component {
               className="user-header">
               <img
                 src="http://lorempixel.com/160/160/abstract"
-                className="img-circle" alt="User Image" />
+                className="img-circle"  alt="User Image" />
               <p>{name}<small>{email}</small></p>
             </li>
             <li
