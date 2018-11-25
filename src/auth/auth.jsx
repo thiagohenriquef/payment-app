@@ -33,7 +33,7 @@ class Auth extends Component {
       <div
         className="login-box">
         <div
-          className="login-logo"><b> My</b> Money</div>
+          className="login-logo">Payment <b> App</b></div>
         <div
           className="login-box-body">
           <p
