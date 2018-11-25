@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { toastr } from 'react-redux-toastr'
-import { reset, initialize } from 'redux-form'
-import billingCycle from './billingCycle'
+import { initialize } from 'redux-form'
 import {
   showTabs,
   selectTab
